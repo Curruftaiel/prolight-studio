@@ -1,20 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# ProLight Studio 2026
 
-# Run and deploy your AI Studio app
+Suite web para diagnóstico técnico fotográfico y generación de flujo profesional de edición asistida por IA.
 
-This contains everything you need to run your app locally.
+## Herramientas profesionales incluidas
 
-View your app in AI Studio: https://ai.studio/apps/a28e28c9-9c95-4324-be69-5def5ff3a277
+- **Exposure Score** en tiempo real (ISO, obturación, apertura).
+- **Dynamic Range Score** para estimar pérdida por ISO/ruido.
+- **Thermal Guard** para validar estabilidad de temperatura de color.
+- **Clipping Risk** en altas luces y sombras.
+- **Motor de recomendaciones** automáticas con reglas de captura y post.
+- **Workflow profesional de 5 pasos** listo para ejecutar en Lightroom/Capture One.
+- **Prompt técnico para IA** con contexto cuantificado.
 
-## Run Locally
+## Ejecutar localmente
 
-**Prerequisites:**  Node.js
+```bash
+npm install
+npm run dev
+```
 
+La app queda disponible en:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- `http://localhost:3000`
+
+## Build de producción
+
+```bash
+npm run build
+```
+
+## Estructura
+
+- `src/App.tsx`: interfaz + panel de herramientas.
+- `src/lib/photoTools.ts`: núcleo de análisis profesional.
+- `src/components/MetricCard.tsx`: tarjetas de métricas.
+
+## Siguiente nivel recomendado
+
+1. Subida de imagen real con lectura EXIF.
+2. Histograma real por canal (RGB) en canvas.
+3. Persistencia de proyectos/ajustes.
+4. Integración backend IA para ejecutar el prompt y devolver ajustes estructurados.
