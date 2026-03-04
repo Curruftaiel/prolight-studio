@@ -23,6 +23,22 @@ La app queda disponible en:
 
 - `http://localhost:3000`
 
+## Uso directo en VS Code
+
+1. Abre la carpeta del proyecto en VS Code:
+   ```bash
+   code /workspace/prolight-studio
+   ```
+2. Instala extensiones recomendadas (VS Code te lo sugerirá automáticamente).
+3. Lanza la app desde **Terminal** con `npm run dev` o desde **Run Task**:
+   - `ProLight: install`
+   - `ProLight: dev`
+4. Para depurar en navegador desde VS Code, usa **Run and Debug** y ejecuta:
+   - `ProLight: Chrome (Vite)`
+5. Visualización:
+   - navegador: `http://localhost:3000`
+   - o panel integrado con extensiones como *Simple Browser*.
+
 ## Build de producción
 
 ```bash
@@ -34,6 +50,8 @@ npm run build
 - `src/App.tsx`: interfaz + panel de herramientas.
 - `src/lib/photoTools.ts`: núcleo de análisis profesional.
 - `src/components/MetricCard.tsx`: tarjetas de métricas.
+- `.vscode/tasks.json`: tareas rápidas para instalar/lint/build/dev.
+- `.vscode/launch.json`: arranque de depuración en Chrome.
 
 ## Siguiente nivel recomendado
 
